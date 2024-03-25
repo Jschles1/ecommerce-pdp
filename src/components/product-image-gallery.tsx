@@ -16,14 +16,35 @@ import { Button } from "./ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 
-const productImages = [
-  { id: 1, src: ImageProduct1, thumbnail: ImageProduct1Thumbnail },
-  { id: 2, src: ImageProduct2, thumbnail: ImageProduct2Thumbnail },
-  { id: 3, src: ImageProduct3, thumbnail: ImageProduct3Thumbnail },
-  { id: 4, src: ImageProduct4, thumbnail: ImageProduct4Thumbnail },
-];
+enum ImageId {
+  Product1 = 1,
+  Product2,
+  Product3,
+  Product4,
+}
 
-type ImageId = (typeof productImages)[number]["id"];
+const productImages = [
+  {
+    id: ImageId.Product1,
+    src: ImageProduct1,
+    thumbnail: ImageProduct1Thumbnail,
+  },
+  {
+    id: ImageId.Product2,
+    src: ImageProduct2,
+    thumbnail: ImageProduct2Thumbnail,
+  },
+  {
+    id: ImageId.Product3,
+    src: ImageProduct3,
+    thumbnail: ImageProduct3Thumbnail,
+  },
+  {
+    id: ImageId.Product4,
+    src: ImageProduct4,
+    thumbnail: ImageProduct4Thumbnail,
+  },
+];
 
 export default function ProductImageGallery() {
   const [activeMainImage, setActiveMainImage] = React.useState<StaticImageData>(
