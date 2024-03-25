@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Jschles1/ecommerce-pdp](https://github.com/Jschles1/ecommerce-pdp)
+- Live Site URL: [Add live site URL here](https://ecommerce-pdp.vercel.app/)
 
 ## My process
 
